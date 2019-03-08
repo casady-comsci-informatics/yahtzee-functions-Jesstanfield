@@ -2,8 +2,8 @@ roll <- function(die = 1:6, size = 2, replace = T){
   sample(die, size, replace)
 }
 
-yahtzeeRoll <- function(){
-  replicate(5, roll(1:6, 1))
+yahtzeeRoll <- function(die = 1:6){
+  replicate(5, roll(die, 1))
 }
 
 sumRoll <- function(roll, value){
